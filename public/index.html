@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <script src="update-controller.js" type="module"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.7.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.7.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.7.2/firebase-database.js"></script>
+    <script defer src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link defer type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css"/>
+      <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+      body, html {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        --svg-icon-color: #eee;
+      }
+
+      #firebaseui-auth-container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+      }
+
+      .hidden {
+        opacity: 0;
+        pointer-events: 0;
+      }
+
+      body, h1, h2, h3, h4 {
+        margin: 0;
+      }
+
+      * {
+        font-family: 'Open Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="firebaseui-auth-container"></span>
+    <rrda-client></rrda-client>
+    <script src="client.js" type="module"></script>
+  </body>
+</html>

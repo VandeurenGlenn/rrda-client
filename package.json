@@ -1,0 +1,39 @@
+{
+  "name": "rrda-client",
+  "version": "1.0.0",
+  "description": "RaspberryPi relay dimming api client",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "rollup -c -w",
+    "compile": "rollup -c",
+    "precache": "sw-precache --config=sw-precache-config.cjs",
+    "deploy": "npm run compile && npm run precache && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VandeurenGlenn/rrda-client.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VandeurenGlenn/rrda-client/issues"
+  },
+  "homepage": "https://github.com/VandeurenGlenn/rrda-client#readme",
+  "dependencies": {
+    "backed": "^0.13.0",
+    "custom-notification": "^0.1.2",
+    "custom-pages": "^0.12.0",
+    "custom-renderer-mixin": "^1.1.1",
+    "custom-select-mixins": "^0.13.0",
+    "custom-svg-icon": "^0.10.2",
+    "custom-svg-iconset": "^0.9.2",
+    "web-time-picker": "github:vandeurenglenn/time-picker"
+  },
+  "devDependencies": {
+    "del": "^4.0.0",
+    "rollup": "^3.20.2",
+    "sw-precache": "^5.2.1"
+  }
+}
