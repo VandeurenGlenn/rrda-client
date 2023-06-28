@@ -28,7 +28,7 @@
     "custom-renderer-mixin": "^1.1.1",
     "custom-select-mixins": "^0.13.0",
     "custom-svg-icon": "^0.10.2",
-    "custom-svg-iconset": "^0.9.2",
+    "custom-svg-iconset": "^0.10.1",
     "web-time-picker": "github:vandeurenglenn/time-picker"
   },
   "devDependencies": {
